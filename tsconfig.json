@@ -1,30 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "commonjs",
-    "lib": [
-      "es2018"
-    ],
-    "declaration": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": false,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "experimentalDecorators": true,
-    "strictPropertyInitialization": false,
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+    "target": "ES2018",                      // Target JavaScript version
+    "module": "commonjs",                    // Module system for Node.js
+    "lib": ["es2018"],                       // Include libraries for TypeScript
+    "declaration": true,                     // Generate declaration files
+    "strict": true,                          // Enable all strict type checks
+    "noImplicitAny": true,                   // Disallow `any` type
+    "strictNullChecks": true,                // Strict null checks
+    "noImplicitThis": true,                  // Disallow `this` being of type `any`
+    "alwaysStrict": true,                    // Parse in strict mode
+    "noUnusedLocals": false,                 // Allow unused local variables
+    "noUnusedParameters": false,             // Allow unused parameters
+    "noImplicitReturns": true,               // Ensure all code paths return a value
+    "noFallthroughCasesInSwitch": true,      // Prevent fallthrough in switch cases
+    "inlineSourceMap": true,                 // Include source map
+    "inlineSources": true,                   // Include source code in source maps
+    "experimentalDecorators": true,          // Enable experimental support for decorators
+    "strictPropertyInitialization": false,   // Allow uninitialized properties
+    "esModuleInterop": true,                 // Enable compatibility with CommonJS modules
+    "types": ["node"],                       // Include Node.js type definitions
+    "typeRoots": ["./node_modules/@types"]   // Specify type definitions folder
   },
   "exclude": [
     "node_modules",
     "cdk.out"
   ]
 }
+
