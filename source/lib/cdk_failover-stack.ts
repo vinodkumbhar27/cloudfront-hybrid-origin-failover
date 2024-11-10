@@ -39,7 +39,7 @@ export class CdkCloudFrontFailover extends Stack {
             failoverVariable: failoverRole,
             statusCodeVariable: statusCode,
         },
-        runtime: lambda.Runtime.NODEJS_14_X,   
+        runtime: lambda.Runtime.NODEJS_20_X,   
         code: lambda.Code.fromAsset('source/lambda'),  
         handler: 'app_content.handler'             
   
